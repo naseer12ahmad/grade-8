@@ -2,22 +2,43 @@
 <html>
 
 <head>
-    <title>Web Development Class</title>
-    <script src="script.js"></script>
+    <title>JavaScript Course</title>
 </head>
-<style>
-    h1 {
-        background-color: blue;
-        color: white;
-    }
-</style>
 
 <body>
 
-    <h1>Hello there</h1>
+
+    <h1 id="empty"></h1>
+    <button id="myBtn">create text</button>
+
+
+    <p id="demo">This is 50 px font size</p>
+    <button id="secondBtn">Click Me</button>
+
+
+    <p id="Text">This is red color text</p>
+    <button id="thirdBtn">Click Me</button>
 </body>
 <script>
+    document.getElementById("thirdBtn").onclick = function () {
+        document.getElementById("Text").style.color = "red"
+
+    }
+
+
+    document.getElementById("secondBtn").onclick = function () {
+        document.getElementById("demo").style.fontSize = "50px"
+        document.getElementById("demo").style.color = "purple"
+    }
+
+
+
+    document.getElementById("myBtn").onclick = function () {
+        document.getElementById("empty").innerHTML = "Button has been clicked"
+    }
+
 
 </script>
+</body>
 
 </html>
