@@ -5,37 +5,118 @@
     <title>JavaScript Course</title>
 </head>
 
+<style>
+    .circle {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        border-radius: 50%;
+        display: inline-block;
+
+        margin: 20px;
+    }
+</style>
+
 <body>
+    <!-- <p>What is the magic word!</p>
+    <p><input type="text" id="magicWord"></p>
+    <button id="enterBtn">Enter</button>
+
+    <div id="tweetsName"></div> -->
+
+    <h1>Click over each one of the item and see the reaction. </h1>
+
+    <img src="https://res.cloudinary.com/dojwmpykx/image/upload/v1633345509/text-interect_copy_adobespark_sejanu.jpg"
+        width="300px" id="cat">
+    <br>
 
 
-    <h1 id="empty"></h1>
-    <button id="myBtn">create text</button>
 
 
-    <p id="demo">This is 50 px font size</p>
-    <button id="secondBtn">Click Me</button>
+    <p id="empty"></p>
+    <button id="createText">Create</button>
+
+    <br>
+
+    <p id="someText">This is some text</p>
+    <button id="removeText">Remove</button>
+    <br>
 
 
-    <p id="Text">This is red color text</p>
-    <button id="thirdBtn">Click Me</button>
+    <h2>Click over each circle and follow the reaction. </h2>
+
+    <div class="circle" id="red"></div>
+    <div class="circle" id="green"></div>
+    <div class="circle" id="blue"></div>
+    <div class="circle" id="yellow"></div>
 </body>
 <script>
-    document.getElementById("thirdBtn").onclick = function () {
-        document.getElementById("Text").style.color = "red"
 
+
+    document.getElementById("cat").onclick = function () {
+        document.getElementById("cat").style.display = "none"
     }
 
 
-    document.getElementById("secondBtn").onclick = function () {
-        document.getElementById("demo").style.fontSize = "50px"
-        document.getElementById("demo").style.color = "purple"
+    document.getElementById("createText").onclick = function () {
+        document.getElementById("empty").innerHTML = "New text has been create";
+    }
+
+    document.getElementById("removeText").onclick = function () {
+        document.getElementById("someText").style.display = "none"
+    }
+
+    document.getElementById("red").onclick = function () {
+        alert("Do you want to change the background color to red?")
+
+        document.getElementById("red").style.backgroundColor = "red";
+    }
+
+    document.getElementById("green").onclick = function () {
+        alert("Do you want to change the background color to green?")
+
+        document.getElementById("green").style.backgroundColor = "green";
+    }
+
+    document.getElementById("blue").onclick = function () {
+        alert("Do you want to remove the circle?")
+
+        document.getElementById("blue").style.display = "none";
+    }
+
+    document.getElementById("yellow").onclick = function () {
+        alert("Do you want to change the background color to yellow? ")
+
+        document.getElementById("yellow").style.backgroundColor = "yellow";
+
+        document.getElementById("yellow").style.width = "100px";
+        document.getElementById("yellow").style.height = "100px";
+        document.getElementById("yellow").style.borderRadius = "20px";
     }
 
 
 
-    document.getElementById("myBtn").onclick = function () {
-        document.getElementById("empty").innerHTML = "Button has been clicked"
-    }
+
+
+
+
+
+    // document.getElementById("removeText").onclick = function () {
+    //     document.getElementById("someText").style.display = "none"
+    // }
+
+
+    // var x = 20;
+    // var y = 10;
+
+    // if (x == y) {
+    //     alert("X is equal to y")
+    // } else {
+    //     alert("x is not equal to y")
+    // }
+
+
+
 
 
 </script>
