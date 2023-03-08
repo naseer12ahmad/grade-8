@@ -4,6 +4,7 @@
 <head>
     <title>JavaScript Course</title>
 </head>
+<<<<<<< HEAD
 
 <style>
     .circle {
@@ -16,12 +17,15 @@
         margin: 20px;
     }
 </style>
+=======
+>>>>>>> 6a3a20c8c59addad0d0c2d263fcc94c32e18db41
 
 <body>
     <!-- <p>What is the magic word!</p>
     <p><input type="text" id="magicWord"></p>
     <button id="enterBtn">Enter</button>
 
+<<<<<<< HEAD
     <div id="tweetsName"></div> -->
 
     <h1>Click over each one of the item and see the reaction. </h1>
@@ -49,8 +53,38 @@
     <div class="circle" id="green"></div>
     <div class="circle" id="blue"></div>
     <div class="circle" id="yellow"></div>
+=======
+
+    <h1 id="empty"></h1>
+    <button id="myBtn">create text</button>
+
+
+    <p id="demo">This is 50 px font size</p>
+    <button id="secondBtn">Click Me</button>
+
+
+    <p id="Text">This is red color text</p>
+    <button id="thirdBtn">Click Me</button>
+>>>>>>> 6a3a20c8c59addad0d0c2d263fcc94c32e18db41
 </body>
 <script>
+    document.getElementById("thirdBtn").onclick = function () {
+        document.getElementById("Text").style.color = "red"
+
+    }
+
+
+    document.getElementById("secondBtn").onclick = function () {
+        document.getElementById("demo").style.fontSize = "50px"
+        document.getElementById("demo").style.color = "purple"
+    }
+
+
+
+    document.getElementById("myBtn").onclick = function () {
+        document.getElementById("empty").innerHTML = "Button has been clicked"
+    }
+
 
 
     document.getElementById("cat").onclick = function () {
